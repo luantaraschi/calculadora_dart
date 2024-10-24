@@ -1,5 +1,7 @@
-import 'package:calculadora_dart/calculadora_dart.dart' as calculadora_dart;
+import 'dart:io';
 
-void main(List<String> arguments) {
-  print('Hello world: ${calculadora_dart.calculate()}!');
+void main() {
+  var numeroUm = stdin.readLineSync();
+  var numeroDois = stdin.readLineSync();
+  print(numeroUm! + numeroDois!);
 }
